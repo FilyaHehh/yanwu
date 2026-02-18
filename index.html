@@ -6,135 +6,225 @@
     <title>YANWU</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body>    
     <header class="header">
         <div class="header_inner">
             <nav class="menu">
-                <a href="#">О нас</a>
-                <a href="#">Форматы</a>
-                <a href="#">Тесты</a>
-                <a href="#">Таймлайн</a>
+                <a href="#about">О нас</a>
+                <a href="#sections">Форматы</a>
+                <a href="#tests">Тесты</a>
+                <a href="#timeline">Таймлайн</a>
             </nav>
-            <a href="#"><img src="images/Logo.png"></a>
+            <a href="#hero"><img src="images/Logo.png"></a>
         </div>
     </header>
 
-    <div class="hero">
+    <div id="hero" class="hero">
         <div class="hero_content">
             <h1 class="hero_title">МАСКИ ЯПОНИИ</h1>
             <p class="hero_text">Узнайте японские мифы в доступной форме и с глубоким уважением к истории</p>
             <div class="hero_button">
-                <a href="#"><p>Продолжить путь</p></a>
+                <a class="button_hero" href="#">ПРОДОЛЖИТЬ ПУТЬ</a>
             </div>
         </div>
     </div>
 
-    <div class="about">
-        <h1>Мы — Янву.
-        Онлайн-медиа о      японских масках,где      древние боги и духи японской мифологии     оживают</h1>
-        <h1>Мы стремимся рассказывать японские легенды и мифы в     доступной форме с глубоким уважением к     истории</h1>
+    <div id="about" class="about">
+        <div class="about_content">
+            <h5>Мы — Янву.
+            Онлайн-медиа о <img src="images/symbol_about.png"> японских масках, где <img src="images/symbol_about_1.png"> древние боги и духи японской мифологии <img src="images/symbol_about_2.png"> оживают</h5>
+            <img src="images/about_card.png">
+            <h5>Мы стремимся рассказывать японские легенды и мифы в <img src="images/icon.png"> доступной форме с глубоким уважением к <img src="images/icon_1.png"> истории</h5>
+        </div>
 
     </div>
 
-    <div class="features">
+    <div id="features" class="features">
         <div class="features_content">
-                <h3 class="features_title">Почему именно мы?</h3>
-                <h1 class="features_title">Разноформатность контента</h1>
-                <p class="features_text">Разный набор форматов помогает пользователю глубже погрузиться в мир японской мифологии, делая восприятие информации более насыщенным и разнообразным.
-                </p>
+            <div class="features_titles">
+                <h3><img src="images/icon_2.png">ПОЧЕМУ ИМЕННО МЫ?</h3>
+                <h1>РАЗНОФОРМАТНОСТЬ КОНТЕНТА</h1>
+            </div>
+            <div class="features_cards">
+                <div class="features_card_1"></div>
+                <div class="features_card_1"></div>
+                <div class="features_card_1"></div>
+                <div class="features_card_1"></div>
+            </div>
+            <p class="features_text">Разный набор форматов помогает пользователю глубже погрузиться в мир японской мифологии, делая восприятие информации более насыщенным и разнообразным.
+            </p>
         </div>
     </div>
 
-    <div class="sections">
+    <div id="sections" class="sections">
         <div class="sections_content">
             <div class="sections_titles">
-                <h3 class="sections_title">разделы</h3>
-                <h1 class="sections_title">Четыре входа</h1>
-                <h2 class="sections_title">в японскую мифологию</h2>
+                <h3 class="sections_title"><img src="images/icon.png">РАЗДЕЛЫ</h3>
+                <h1 class="sections_title">ЧЕТЫРЕ ВХОДА</h1>
+                <h2 class="sections_title">В ЯПОНСКУЮ МИФОЛОГИЮ</h2>
             </div>
-            <div class="sections_cards">
-                <div class="card_1">
-                    <img>
-                    <p>Мифы</p>
+            <div class="sections_cards_wrapper">
+                <div class="sections_cards">
+                    <div class="card_1">
+                        <div class="card_1_content">
+                        <img>
+                        </div>
+                        <p>Мифы</p>
+                    </div>
+                    <div class="card_2">
+                        <div class="card_1_content">
+                        <img>
+                        </div>
+                        <p>Легенды</p>
+                    </div>
+                    <div class="card_3">
+                        <div class="card_1_content">
+                        <img>
+                        </div>
+                        <p>Суеверия</p>
+                    </div>
+                    <div class="card_4">
+                        <div class="card_1_content">
+                        <img>
+                        </div>
+                        <p>Спецпроекты</p>
+                    </div>
                 </div>
-                <div class="card_2">
-                    <img>
-                    <p>Легенды</p>
-                </div>
-                <div class="card_3">
-                    <img>
-                    <p>Суеверия</p>
-                </div>
-                <div class="card_4">
-                    <img>
-                    <p>Спецпроекты</p>
-                </div>
-                
             </div>
 
         </div>
     </div>
 
-    <div class="tests">
+    <div id="tests" class="tests">
+        <div class="tests_content">
+            <div class="tests_titles">
+                <h3 class="tests_title"><img src="images/icon_3.png">ИНТЕРАКТИВЫ</h3>
+                <h1 class="tests_title">ТЕСТЫ</h1>
+                <h5>Квизы и мини-проверки <img src="images/icon_5.png"> внимательности по темам <img src="images/icon_4.png"> ёкаев, ритуалов, талисманов и «страшных» городских историй.</h5>
+                <p class="tests_text">Иногда правильного ответа нет: важнее логика мифа, символы и контекст эпохи.</p>
+            </div>
+            <div class="tests_card">
+                <div class="tests_card_wrapper">
+                    <div class="tests_card_content">
+                        <P>Уровень сложности: Лёгкий </P>
+                        <h6>ТЕАТРАЛЬНЫЕ МИРЫ</h6>
+                        <div class="image_container">
+                            <img src="images/tl_mask.png" alt="">
+                        </div>
+                        <p>Какой вы злой дух из японской мифологии на примере масок Ханья, Они, Каппа, Кицуен, Онрё?</p>
+                        <a class="button_hero" href="#">ПРОЙТИ ТЕСТ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="timeline">
+    <div id="timeline" class="timeline">
         <div class="timeline_content">
             <div class="timeline_titles">
-                <h3>ИСТОРИЯ</h3>
-                <h1>ТАЙМЛАЙН</h1>
-                <h1>СОБЫТИЙ</h1>
+                <h3>ИСТОРИЯ <img src="images/icon_1.png"></h3>
+                <div class="titles_box">
+                    <h1 class="title_right">ТАЙМЛАЙН</h1>
+                    <h1 class="title_left">СОБЫТИЙ</h1>
+                </div>
             </div>
             <div class="timeline_scroll">
-                <a href="#">VI  - VIII век</a>
-                <a href="#">IX - XII века</a>
-                <a href="#">XIII - XVI векa</a>
-                <a href="#">XVII - IX век</a>
-                <a href="#">XX - XXI век</a>
+                <a class="age" href="#">VI  - VIII век</a>
+                <a class="age" href="#">IX - XII века</a>
+                <a class="age" href="#">XIII - XVI векa</a>
+                <a class="age" href="#">XVII - IX век</a>
+                <a class="age" href="#">XX - XXI век</a>
             </div>
             <div class="timeline_cards">
-
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="tl_images" src="images/tl_mask.png">
+                            <p>Невероятно<br>традиционная</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                            <button><a href="#">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="tl_images" src="images/tl_mask.png">
+                            <p>Невероятно<br>традиционная</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                            <button><a href="#">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="tl_images" src="images/tl_mask.png">
+                            <p>Невероятно<br>традиционная</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                            <button><a href="#">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="tl_images" src="images/tl_mask.png">
+                            <p>Невероятно<br>традиционная</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                            <button><a href="#">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="form">
-        <div class="form_content">
-            <h3>Подпишись на новые материалы:</h3>
-            <p>Введите почту</p>
-            <a href="#">Отправить</a>
-        </div>
-    </div>
+    
 
     <footer class="footer">
+        <div class="form">
+        <div class="form_content">
+            <h6>ПОДПИШИСЬ НА НОВЫЕ МАТЕРИАЛЫ:</h6>
+            <form>
+                <input type="text" placeholder="ВВЕДИТЕ ПОЧТУ" class="form_input">
+                <button class="form_button">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+    </div>
         <div class="footer_content">
             <div class="footer_info">
-                <a href="#"><img></a>
-                <a href="#"><img></a>
-                <a href="#"><img></a>
-                <a href="#"><img></a>
+                <div class="footer_socials">
+                    <a href="#"><img src="images/vk.png"></a>
+                    <a href="#"><img src="images/telegram.png"></a>
+                    <a href="#"><img src="images/dzen.png"></a>
+                </div>
+                <a href="#"><img src="images/HSE.png"></a>
                 <div class="footer_container">
                     <p>г.. Нижний Новгород,</p>
                     <p>ул.. Большая печёрская, 25/12</p>
                 </div>
             </div>
             <div class="footer_menu">
-                <a href="#"><p>О нас</p></a>
-                <a href="#"><p>Форматы</p></a>
-                <a href="#"><p>Тесты</p></a>
-                <a href="#"><p>Таймлайн</p></a>
+                <a href="#about"><p>О нас</p></a>
+                <a href="#sections"><p>Форматы</p></a>
+                <a href="#tests"><p>Тесты</p></a>
+                <a href="#timeline"><p>Таймлайн</p></a>
             </div>
             <div class="footer_disclaimer">
                 <p>2026 © ЯНВУ. Все права защищены.</p>
-                <a href="#"><p>Наверх</p></a>
+                <a href="#hero"><p>Наверх</p></a>
                 <a href="#"><p>Политика конфиденциальности</p></a>
             </div>
         </div>
     </footer>
-
-    
-
-    
 </body>
 </html>
