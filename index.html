@@ -2,26 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YANWU</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Logo.png">
 </head>
-<body>    
+
+<body>
     <header class="header">
         <div class="header_inner">
-            <nav class="menu">
-                <a href="#about">О нас</a>
-                <a href="#sections">Форматы</a>
-                <a href="#tests">Тесты</a>
-                <a href="#timeline">Таймлайн</a>
+            <nav>
+                <a href="index.html">О нас</a>
+                <div class="dropdown"><a href="#">Форматы</a>
+                    <div class="dropdown-content">
+                        <a  href="legends.html">Мифы</a>
+                        <a  href="myths.html">Легенды</a>
+                        <a  href="superstitions.html">Суеверия</a>
+                        <a  href="specials.html">Спецпроекты</a>
+                    </div>
+                </div>
+                <a href="tests.html">Тесты</a>
+                <a href="timeline.html">Таймлайн</a>
             </nav>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <a href="#hero"><img src="images/Logo.png"></a>
         </div>
     </header>
 
     <div id="hero" class="hero">
         <div class="hero_content">
-            <h1 class="hero_title">МАСКИ ЯПОНИИ</h1>
+            <h1 class="hero_title">МАСКИ<br>ЯПОНИИ</h1>
             <p class="hero_text">Узнайте японские мифы в доступной форме и с глубоким уважением к истории</p>
             <div class="hero_button">
                 <a class="button_hero" href="#">ПРОДОЛЖИТЬ ПУТЬ</a>
@@ -32,9 +46,9 @@
     <div id="about" class="about">
         <div class="about_content">
             <h5>Мы — Янву.
-            Онлайн-медиа о <img src="images/symbol_about.png"> японских масках, где <img src="images/symbol_about_1.png"> древние боги и духи японской мифологии <img src="images/symbol_about_2.png"> оживают</h5>
-            <img src="images/about_card.png">
-            <h5>Мы стремимся рассказывать японские легенды и мифы в <img src="images/icon.png"> доступной форме с глубоким уважением к <img src="images/icon_1.png"> истории</h5>
+            Онлайн-медиа о <img class="icon_text" src="images/symbol_about.png"> японских масках, где <img class="icon_text" src="images/symbol_about_1.png"> древние боги и духи японской мифологии <img class="icon_text" src="images/symbol_about_2.png"> оживают</h5>
+            <img id="aboutcard" src="images/about_card.png">
+            <h5>Мы стремимся рассказывать японские легенды и мифы в <img class="icon_text" src="images/icon.png"> доступной форме с глубоким уважением к <img class="icon_text" src="images/icon_1.png"> истории</h5>
         </div>
 
     </div>
@@ -46,10 +60,21 @@
                 <h1>РАЗНОФОРМАТНОСТЬ КОНТЕНТА</h1>
             </div>
             <div class="features_cards">
-                <div class="features_card_1"></div>
-                <div class="features_card_1"></div>
-                <div class="features_card_1"></div>
-                <div class="features_card_1"></div>
+                <div class="features_card_1">
+                    <img src="images/features-1.png">
+                    <div class="flip-card-back">
+                        <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                    </div>
+                </div>
+                <div class="features_card_1">
+                    <img src="images/features-2.png">
+                </div>
+                <div class="features_card_1">
+                    <img src="images/features-3.png">
+                </div>
+                <div class="features_card_1">
+                    <img src="images/features-4.png">
+                </div>
             </div>
             <p class="features_text">Разный набор форматов помогает пользователю глубже погрузиться в мир японской мифологии, делая восприятие информации более насыщенным и разнообразным.
             </p>
@@ -65,33 +90,64 @@
             </div>
             <div class="sections_cards_wrapper">
                 <div class="sections_cards">
-                    <div class="card_1">
-                        <div class="card_1_content">
-                        <img>
+                    <div class="card_grid_1">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="tl_images" src="images/tl_mask.png">
+                                    <p class="tl_shortText">Мифы</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                                    <button><a href="legends.html">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                                </div>
+                            </div>
                         </div>
-                        <p>Мифы</p>
                     </div>
-                    <div class="card_2">
-                        <div class="card_1_content">
-                        <img>
+                    <div class="card_grid_2">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="tl_images" src="images/mask_3.png">
+                                    <p class="tl_shortText">Легенды</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                                    <button><a href="myths.html">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                                </div>
+                            </div>
                         </div>
-                        <p>Легенды</p>
                     </div>
-                    <div class="card_3">
-                        <div class="card_1_content">
-                        <img>
+                    <div class="card_grid_3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="tl_images" src="images/mask_2.png">
+                                    <p class="tl_shortText">Суеверия</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                                    <button><a href="superstitions.html">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                                </div>
+                            </div>
                         </div>
-                        <p>Суеверия</p>
                     </div>
-                    <div class="card_4">
-                        <div class="card_1_content">
-                        <img>
+                    <div class="card_grid_4">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="tl_images" src="images/mask_3.png">
+                                    <p class="tl_shortText">Спецпроекты</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Японская ритуальная маска возрастом 1800 летбыла обнаружена в префектуре Осака в ходе работ по расширению монорельсовой дороги в городе Хигасиосака.</p>
+                                    <button><a href="specials.html">ЧИТАТЬ ПОДРОБНЕЕ</a></button>
+                                </div>
+                            </div>
                         </div>
-                        <p>Спецпроекты</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -100,21 +156,25 @@
             <div class="tests_titles">
                 <h3 class="tests_title"><img src="images/icon_3.png">ИНТЕРАКТИВЫ</h3>
                 <h1 class="tests_title">ТЕСТЫ</h1>
-                <h5>Квизы и мини-проверки <img src="images/icon_5.png"> внимательности по темам <img src="images/icon_4.png"> ёкаев, ритуалов, талисманов и «страшных» городских историй.</h5>
+                <h5>Квизы и мини-проверки <img class="icon_text" src="images/icon_5.png"> внимательности по темам <img class="icon_text" src="images/icon_4.png"> ёкаев, ритуалов, талисманов и «страшных» городских историй.</h5>
                 <p class="tests_text">Иногда правильного ответа нет: важнее логика мифа, символы и контекст эпохи.</p>
             </div>
-            <div class="tests_card">
-                <div class="tests_card_wrapper">
-                    <div class="tests_card_content">
-                        <P>Уровень сложности: Лёгкий </P>
-                        <h6>ТЕАТРАЛЬНЫЕ МИРЫ</h6>
-                        <div class="image_container">
-                            <img src="images/tl_mask.png" alt="">
+            <div class="test_container">
+                <a class="arrow" href="#"><img src="images/arrow_left.png"></a>
+                <div class="tests_card">
+                    <div class="tests_card_wrapper">
+                        <div class="tests_card_content">
+                            <div class="text_container"> <img class="card_icon" src="images/icon_2.png"> </P></div>
+                            <h6>ТЕАТРАЛЬНЫЕ МИРЫ</h6>
+                            <div class="image_container">
+                                <img src="images/tl_mask.png" alt="">
+                            </div>
+                            <p>Какой вы злой дух из японской мифологии на примере масок Ханья, Они, Каппа, Кицуен, Онрё?</p>
+                            <a class="button_hero" href="#">ПРОЙТИ ТЕСТ</a>
                         </div>
-                        <p>Какой вы злой дух из японской мифологии на примере масок Ханья, Они, Каппа, Кицуен, Онрё?</p>
-                        <a class="button_hero" href="#">ПРОЙТИ ТЕСТ</a>
                     </div>
                 </div>
+                <a class="arrow" href="#"><img src="images/arrow_right.png"></a>
             </div>
         </div>
     </div>
@@ -122,7 +182,7 @@
     <div id="timeline" class="timeline">
         <div class="timeline_content">
             <div class="timeline_titles">
-                <h3>ИСТОРИЯ <img src="images/icon_1.png"></h3>
+                <h3>ИСТОРИЯ <img src="images/icon_1_small.png"></h3>
                 <div class="titles_box">
                     <h1 class="title_right">ТАЙМЛАЙН</h1>
                     <h1 class="title_left">СОБЫТИЙ</h1>
@@ -188,13 +248,11 @@
         </div>
     </div>
 
-    
-
     <footer class="footer">
-        <div class="form">
+        <div class="formBlock">
         <div class="form_content">
             <h6>ПОДПИШИСЬ НА НОВЫЕ МАТЕРИАЛЫ:</h6>
-            <form>
+            <form id="form">
                 <input type="text" placeholder="ВВЕДИТЕ ПОЧТУ" class="form_input">
                 <button class="form_button">ОТПРАВИТЬ</button>
             </form>
@@ -207,6 +265,7 @@
                     <a href="#"><img src="images/telegram.png"></a>
                     <a href="#"><img src="images/dzen.png"></a>
                 </div>
+                <a href="#"><img src="images/Logo.png"></a>
                 <a href="#"><img src="images/HSE.png"></a>
                 <div class="footer_container">
                     <p>г.. Нижний Новгород,</p>
