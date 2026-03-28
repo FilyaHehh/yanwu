@@ -297,3 +297,16 @@ P {
     justify-content: center;
     margin: 96px;
 }
+
+.timeline_article {
+    display: flex;
+    width: auto;
+    margin: 223px;
+}
+
+.other_articles {
+    margin: 61px;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+}
