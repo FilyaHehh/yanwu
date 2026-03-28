@@ -104,6 +104,7 @@ article {
 h1 {
     color: var(--yanwu-red);
     width: 100%;
+    padding: 57px;
 }
 
 .description p {
@@ -310,3 +311,4 @@ P {
     flex-direction: column;
     gap: 57px;
 }
+
